@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Hanken+Grotesk', sans-serif;
+    font-size: 18px;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+header {
+    display: flex;
+    width: 70%;
+    height: 80px;
+    background-color: goldenrod;
+    border-radius: 3px;
+    margin: 30px 0px;
+    align-items: center;
+    color: #fff;
+    justify-content: space-between;
+    padding: 15px;
+}
+p.logo {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 30px;
+}
+p.cart {
+    float: right;
+    background-color: #fff;
+    color: goldenrod;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#count {
+    margin-left: 10px;
+    width: 30px;
+    height: 30px ;
+    border-radius: 50%;
+    background-color: goldenrod;
+    color: #fff;
+    padding: 5px;
+}
+main {
+    max-width:70%;
+    display: flex;
+    gap: 80px;
+    margin-bottom: 30px;
+}
+article {
+    max-width:60% ;
+    display: grid;
+    grid-template:  repeat(2, 1fr);
+    gap: 15px;
+}
+
+article figure.one{
+    grid-column: 1/2;
+    grid-row: 1;
+}
+article figure.two{
+    grid-column: 2/3;
+    grid-row: 1;
+}
+article figure.three{
+    grid-column: 1/2;
+    grid-row: 2;
+}
+article figure.four{
+    grid-column: 2/3;
+    grid-row: 2;
+}
+article figure {
+    text-align: center;
+    border: 1px solid gold;
+    padding: 20px;
+}
+article figure img{
+    margin-bottom: 10px;
+}
+article figure p {
+    margin: 10px 0;
+}
+article figure p:nth-child(3){
+    color: red;
+    font-weight: 700;
+}
+
+article figure input {
+    padding: 5px 80px;
+    color: #fff;
+    background-color: goldenrod;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+}
+aside{
+    max-width: 40%;
+    /* height: 100px; */
+    background-color: #eee;
+    white-space: nowrap;
+    
+}
+ aside .header {
+    background-color: goldenrod;
+    padding: 10px 105px;
+    color: #fff;
+ } 
