@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,59 +9,28 @@
     <link rel="stylesheet" href="css/font-icon/css/all.css">
     <title>E-commerce shopping cart</title>
 </head>
+
 <body>
     <header>
         <p class="logo">logo</p>
         <p class="cart">
             <i class="fa-solid fa-cart-shopping"></i>
-            <span id="count">4</span>
+            <span id="count">0 </span>
         </p>
     </header>
-    <main> 
-        <article>
-            <figure class="one">
-                <img id="img-one" src="./images/foldable-mobile.jpg" alt="foldable phone"width="200
-                " height="200">
-                <p>Z-flip Foldable Mobile</p>
-                <p>$120.00</p>
-            <label for="Add to cart"></label>
-                <input type="button" value="Add to cart" id="Add to cart">
-            </figure>
-            <figure class="two">
-                <img id="img-two" src="./images/air-pods.png" alt="airpods" width="200
-                " height="200">
-                <p>Airpod Pro</p>
-                <p>$60.00</p>
-                <label for="Add to cart"></label>
-                <input type="button" value="Add to cart" id="Add to cart">
-            </figure>
-            <figure class="three">
-                <img id="img-three" src="./images/camera.jpg" alt="camera" width="200
-                " height="200">
-                <p>200 DSLR camera</p>
-                <p>$230.00</p>
-                <label for="Add to cart"></label>
-                <input type="button" value="Add to cart" id="Add to cart">
-            </figure>
-            <figure class="four">
-                <img id="img-four" src="./images/headphone.jpg" alt="headphone" width="200" height="200">
-                <p>Headphone</p>
-                <p>$100.00</p>
-                <label for="Add to cart"></label>
-                <input type="button" value="Add to cart" id="Add to cart">
-            </figure>
-        </article>
+    <main>
+        <article id="root"></article>
         <aside>
             <p class="header">My Cart</p>
-            <hr>
-            <p>total
-                <span>510</span>
-            </p>
-        
+            <p id="cartItem">Your cart is empty </p>
+            <section class="foot">
+                <h3>total</h3>
+                <h2 id="total">$ 0.00</h2>
+            </section>
         </aside>
-              
     </main>
-     
+
     <script src="index.js"></script>
 </body>
+
 </html>
